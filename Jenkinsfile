@@ -23,7 +23,7 @@ pipeline {
     }
   stage('Docker Run') {
       steps {
-         sh 'nohup /usr/bin/docker run -t --name sample-hcl -p 8083:8083 sample-hcl &'
+         sh 'nohup /usr/bin/docker run -t --name sample-hcl -p sample-hcl &'
       }
     } 
   }
